@@ -10,91 +10,94 @@ int main() {
     int number;
 
     while (true) {
-        cout << "¿øÇÏ´Â °è»êÀ» ¼±ÅÃÇÏ¼¼¿ä." << endl;
-        cout << "1. ¿øÀÇ ³ÐÀÌ °è»ê" << endl;
-        cout << "2. ¿øÀÇ µÑ·¹ °è»ê" << endl;
-        cout << "3. ¿ø±âµÕÀÇ ºÎÇÇ °è»ê" << endl;
-        cout << "4. ¿ø±âµÕÀÇ °Ñ³ÐÀÌ °è»ê" << endl;
-        cout << "5. ¿ø»ÔÀÇ ºÎÇÇ °è»ê" << endl;
-        cout << "6. ±¸ÀÇ ºÎÇÇ °è»ê" << endl;
-        cout << "7. ±¸ÀÇ °Ñ³ÐÀÌ °è»ê" << endl;
-        cout << "8. Á¾·á" << endl;
-        cout << "¼±ÅÃ:";
+        cout << "ì›í•˜ëŠ” ê³„ì‚°ì„ ì„ íƒí•˜ì„¸ìš”." << endl;
+        cout << "1. ì›ì˜ ë„“ì´ ê³„ì‚°" << endl;
+        cout << "2. ì›ì˜ ë‘˜ë ˆ ê³„ì‚°" << endl;
+        cout << "3. ì›ê¸°ë‘¥ì˜ ë¶€í”¼ ê³„ì‚°" << endl;
+        cout << "4. ì›ê¸°ë‘¥ì˜ ê²‰ë„“ì´ ê³„ì‚°" << endl;
+        cout << "5. ì›ë¿”ì˜ ë¶€í”¼ ê³„ì‚°" << endl;
+        cout << "6. êµ¬ì˜ ë¶€í”¼ ê³„ì‚°" << endl;
+        cout << "7. êµ¬ì˜ ê²‰ë„“ì´ ê³„ì‚°" << endl;
+        cout << "8. ì¢…ë£Œ" << endl;
+        cout << "ì„ íƒ:";
         cin >> number;
         cout << endl;
 
         if (number == 1) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius;
             Circle circle(radius);
             double area = circle.Area();
-            cout << "¿øÀÇ ³ÐÀÌ: " << area << endl;
+            cout << "ì›ì˜ ë„“ì´: " << area << endl;
         }
 
-        if (number == 2) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+        else if (number == 2) {
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius;
             Circle circle(radius);
             double circumference = circle.Circumference();
-            cout << "¿øÀÇ µÑ·¹: " << circumference << endl;
+            cout << "ì›ì˜ ë‘˜ë ˆ: " << circumference << endl;
         }
 
-        if (number == 3) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+        else if (number == 3) {
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius; 
             cout << endl;
-            cout << "³ôÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+            cout << "ë†’ì´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> height;
             Cylinder cylinder(radius, height); 
             double volume = cylinder.Volume();
-            cout << "¿ø±âµÕÀÇ ºÎÇÇ: " << volume << endl;
+            cout << "ì›ê¸°ë‘¥ì˜ ë¶€í”¼: " << volume << endl;
 
 
         }
 
-        if (number == 4) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+        else if (number == 4) {
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius;
             cout << endl;
-            cout << "³ôÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+            cout << "ë†’ì´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> height;
             Cylinder cylinder(radius, height);
             double surface_area = cylinder.SurfaceArea();
-            cout << "¿ø±âµÕÀÇ °Ñ³ÐÀÌ: " << surface_area << endl;
+            cout << "ì›ê¸°ë‘¥ì˜ ê²‰ë„“ì´: " << surface_area << endl;
 
         }
 
-        if (number == 5) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+        else if (number == 5) {
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius;
             cout << endl;
-            cout << "³ôÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+            cout << "ë†’ì´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> height;
             Cone cone(radius, height);
             double volume = cone.Volume();
-            cout << "¿ø»ÔÀÇ ºÎÇÇ: " << volume << endl;
+            cout << "ì›ë¿”ì˜ ë¶€í”¼: " << volume << endl;
         }
 
-        if (number == 6) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+        else if (number == 6) {
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius;
             Sphere sphere(radius);
             double volume = sphere.Volume();
-            cout << "±¸ÀÇ ºÎÇÇ: " << volume << endl;
+            cout << "êµ¬ì˜ ë¶€í”¼: " << volume << endl;
         }
 
-        if (number == 7) {
-            cout << "¹ÝÁö¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+        else if (number == 7) {
+            cout << "ë°˜ì§€ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
             cin >> radius;
             Sphere sphere(radius);
             double surface_area = sphere.SurfaceArea();
-            cout << "±¸ÀÇ °Ñ³ÐÀÌ: " << surface_area << endl;
+            cout << "êµ¬ì˜ ê²‰ë„“ì´: " << surface_area << endl;
         }
         
-        if (number == 8) {
-            std::cout << "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù." << std::endl;
+        else if (number == 8) {
+            cout << "í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤." << endl;
             break;
         }
+
+        else {
+            cout << "ì˜¬ë°”ë¥¸ ìˆ«ìžë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”." << endl; 
     }
 
     return 0;
